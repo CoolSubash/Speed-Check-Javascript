@@ -1,0 +1,103 @@
+
+body{
+    background-color: blueviolet;
+}
+.text-wordarea{
+    width:80%;
+    margin:2rem auto 1rem;
+    
+}
+#word{
+    width:100%;
+    text-indent: 10px;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 10px;
+    padding: 2px;
+    height: 350px;
+    resize: none;
+}
+#word::-webkit-scrollbar {
+width: 10px;
+
+}
+
+/* Track */
+#word::-webkit-scrollbar-track {
+background: #f1f1f1; 
+border-radius: 4px;
+
+}
+
+/* Handle */
+#word::-webkit-scrollbar-thumb {
+background: rgb(25, 14, 184); 
+border-radius: 4px;
+
+
+}
+
+/* Handle on hover */
+#word::-webkit-scrollbar-thumb:hover {
+background: #555; 
+
+}
+
+.word-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+    width:80%;
+    background-color: blue;
+    padding: 16px;
+  
+    text-align: center;
+   
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.word-heading h1{
+    text-align: center;
+    margin-top:3rem;
+    font-size: 4rem;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+    transition: alll 0.5s linear;
+}
+@keyframes  move{
+    0%{
+        transform: translateX(-10px);
+        color: aqua;
+        opacity:1;
+    }
+    25%{
+        transform: translateX(-20px);
+        color: rgb(225, 104, 18);
+        opacity:0.8;
+    }
+    50%{
+        transform: translateX(-30px);
+        color: rgb(198, 21, 21);
+        opacity:0.6;
+    }
+    75%{
+
+        transform: translateX(-40px);
+        color: rgb(21, 0, 255);
+        opacity:0.4;
+    }
+  
+    100%{
+        transform: translateX(-60px);
+        color: rgb(64, 151, 51);
+        opacity:0.2;
+    }
+}
